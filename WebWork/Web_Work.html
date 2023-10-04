@@ -13,8 +13,8 @@
     <div class="container">
         <div class="nav">
             <input type="text" placeholder="Write Something in Here...">
-            <button>Create</button>
-            <button>Clear</button>
+            <button id="create">Create</button>
+            <button id="clear">Clear</button>
         </div>
 
         <div class="container">
@@ -29,7 +29,7 @@
     <script type="module">
         // Get users info
 
-        let Bt = document.querySelector('.nav button');
+        let Bt = document.querySelector('#create');
         Bt.onclick = function () {
             let input = document.querySelector('.nav input');
             let Taskinfo = input.value;
@@ -72,6 +72,10 @@
             }
             // console.log("debug");
             input.value = "";
+        }
+
+        let clear = document.querySelector('#clear');
+        clear.onclick = function{
         }
     </script>
 </body>
