@@ -1,0 +1,12 @@
+h1 {
+    background-color: #065767;
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+}
+
+.isprime-output {
+    width: 200px;
+    height: 30px;
+    background-color: lightblue;
+}

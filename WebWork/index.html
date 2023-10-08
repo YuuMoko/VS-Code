@@ -4,15 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="./static/images/download.jpg" />
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/card.css">
+    <title>YuuMoko 202215030324</title>
 </head>
 
 <body>
-    <h1>Welcome to YuuMoko Page</h1>
+    <h1 class="title">Welcome to YuuMoko Page</h1>
+    <div class="user-card">
+        <div class="user-card-head">This is YuuMoko</div>
+        <div class="user-card-body">
+            <div class="user-card-body-photo"><a href="#">
+                    <img src="static/images/download.jpg" alt="">
+                </a>
+            </div>
+            <div class="user-card-body-info">
+                <div class="user-card-body-info-username"><a href="#">YuuMoko</a>
 
+                </div>
+                <div class="user-card-body-info-reputation">
+                    <span style="color: #6A737C; font-weight: bold;">2004</span>
+                    <div class="item" style="background-color: #FFCC01;"></div>
+                    12
+                    <div class="item" style="background-color: #B4B8BC;"></div>
+                    5
+                    <div class="item" style="background-color: #D1A684;"></div>
+                    boy
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>There are many tools implemented in JavaScript</p>
+
+    <nav>
+        <ul>
+            <li>
+                <h4 style="display: inline-block;">This is a to-do list</h4>
+                <a href="./TodoList/Web_Work.html" style="text-decoration: none;">click here</a>
+            </li>
+
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <div class="introduce">Hello My name is YuuMoko,18 years student,Here is the algorithm tool I impemented in
+            JavaScript</div>
+
+        <div class="Isprime">
+            <h4>Is prime</h4>
+            <input type="text" placeholder="Write Something in Here" class="isprime-input">
+            <button class="isprime-button">click</button>
+
+            <pre class="isprime-output"></pre>
+        </div>
+    </div>
 
 
     <footer>&copy; 2023 YuuMoko</footer>
+
+
+    <script type="module">
+        import { isprime } from "./static/js/isprime.js";
+
+        isprime();
+    </script>
 </body>
 
 </html>
