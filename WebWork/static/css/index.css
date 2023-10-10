@@ -1,9 +1,30 @@
-h1 {
-    background-color: #065767;
-    color: #fff;
-    text-align: center;
-    font-size: 60px;
+.navbar-header {
+    float: none;
+    background-color: #222222;
+    box-sizing: content-box;
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
 }
+
+.navbar-header div {
+    color: #9D9D9D;
+    font-family: SimSun;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.navbar-header div:hover {
+    color: #FFFFFF;
+    cursor: pointer;
+
+}
+
+.navbar-header-skip {
+    text-decoration: none;
+}
+
 
 .isprime-output {
     width: 200px;
@@ -13,4 +34,60 @@ h1 {
 
 body {
     background-image: url("../images/background.png");
+    margin: 5px;
+}
+
+.panel-body {
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.footer {
+    background-color: #222222;
+    height: 60px;
+    text-align: center;
+    color: #9D9D9D;
+    font-weight: 100;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: SimSun;
+    line-height: 60px;
+}
+
+.footer:hover {
+    color: #FFFFFF;
+}
+
+.introduce {
+    color: #9D9D9D;
+    font-size: 5px;
+}
+
+.navbar-header>div {
+    margin: 0;
+}
+
+#myskill ul p {
+    font-size: 10px;
+}
+
+#contact p {
+    font-size: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: lightsteelblue;
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+nav ul li h5 {
+    display: inline-block;
 }

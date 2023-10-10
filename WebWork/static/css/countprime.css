@@ -1,0 +1,16 @@
+.count-prime {
+    margin: 0;
+}
+
+.count-prime-description {
+    margin: 0;
+    color: #9D9D7D;
+    font-size: 3px;
+
+}
+
+.count-prime-output {
+    width: 400px;
+    height: 30px;
+    background-color: lightblue;
+}

@@ -7,68 +7,127 @@
     <link rel="shortcut icon" type="image/png" href="./static/images/download.jpg" />
     <link rel="stylesheet" href="./static/css/index.css">
     <link rel="stylesheet" href="./static/css/card.css">
+    <link rel="stylesheet" href="./static/css/countprime.css">
+    <link rel="stylesheet" href="./static/css/isprime.css">
     <title>YuuMoko 202215030324</title>
 </head>
 
 <body>
-    <h1 class="title">Welcome to YuuMoko Page</h1>
-    <div class="user-card">
-        <div class="user-card-head">This is YuuMoko</div>
-        <div class="user-card-body">
-            <div class="user-card-body-photo"><a href="#">
-                    <img src="static/images/download.jpg" alt="">
-                </a>
-            </div>
-            <div class="user-card-body-info">
-                <div class="user-card-body-info-username"><a href="#">YuuMoko</a>
-
+    <div class="navbar-header">
+        <div>Welcome to YuuMoko Website</div>
+    </div>
+    <div class="panel-body">
+        <div>
+            <h4>About Me</h4>
+        </div>
+        <div class="user-card">
+            <div class="user-card-head">This is YuuMoko</div>
+            <div class="user-card-body">
+                <div class="user-card-body-photo"><a href="#">
+                        <img src="static/images/download.jpg" alt="">
+                    </a>
                 </div>
-                <div class="user-card-body-info-reputation">
-                    <span style="color: #6A737C; font-weight: bold;">2004</span>
-                    <div class="item" style="background-color: #FFCC01;"></div>
-                    12
-                    <div class="item" style="background-color: #B4B8BC;"></div>
-                    5
-                    <div class="item" style="background-color: #D1A684;"></div>
-                    boy
+                <div class="user-card-body-info">
+                    <div class="user-card-body-info-username"><a href="#">YuuMoko</a>
+
+                    </div>
+                    <div class="user-card-body-info-reputation">
+                        <span style="color: #6A737C; font-weight: bold;">2004</span>
+                        <div class="item" style="background-color: #FFCC01;"></div>
+                        12
+                        <div class="item" style="background-color: #B4B8BC;"></div>
+                        5
+                        <div class="item" style="background-color: #D1A684;"></div>
+                        boy
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <p>There are many tools implemented in JavaScript</p>
+        <p class="introduce">Hello, my English name is YuuMoko, Chinese name Yang Ziyi, I love programming, especially
+            back-end programming, front-end also have some research</p>
+        <nav>
+            <ul>
+                <li>
+                    <h5>A to-do list</h5>
+                    <a href="./TodoList/Web_Work.html" style="text-decoration: none;">click here</a>
+                </li>
+                <li>
+                    <h5>My skills</h5>
+                    <a href="#myskill" style="text-decoration: none;">click here</a>
+                </li>
+                <li>
+                    <h5>Contact me</h5>
+                    <a href="#contact" style="text-decoration: none;"> click here</a>
+                </li>
+                <li>
+                    <h5>Isprime</h5>
+                    <a href="#Isprime">click here</a>
+                </li>
+                <li>
+                    <h5>CountPrime</h5>
+                    <a href="#count-prime">click here</a>
+                </li>
+            </ul>
+        </nav>
 
-    <nav>
-        <ul>
-            <li>
-                <h4 style="display: inline-block;">This is a to-do list</h4>
-                <a href="./TodoList/Web_Work.html" style="text-decoration: none;">click here</a>
-            </li>
-
-        </ul>
-    </nav>
-
-
-    <div class="container">
-        <div class="introduce">Hello My name is YuuMoko,18 years student,Here is the algorithm tool I impemented in
-            JavaScript</div>
-
-        <div class="Isprime">
-            <h4>Is prime</h4>
-            <input type="text" placeholder="Write Something in Here" class="isprime-input">
-            <button class="isprime-button">click</button>
-
-            <pre class="isprime-output"></pre>
+        <div id="myskill">
+            <h4>My skills</h4>
+            <ul>
+                <li>Algorithm</li>
+                <p>I am a little bit good at algorithms and once won the first prize in the
+                    provincial algorithm
+                    competition, I usually write algorithm problems in C++,I am good at many data structures and
+                    algorithms, I can directly implement priority priority queues, and lookup sets,Ac automata,KMP, I am
+                    good at dynamic programming, among which I am proficient in knapsack model, state compression,
+                    familiar with graph theory, capable of writing adjacencylist,SPFA,Floyd algorithm,BFS,DFS,dijkstra,
+                    and able to write a lot of greed, including regretabel,</p>
+                <li>Linux</li>
+                <p>I'm good at some basic Linux commands, using thrift, ssh, vim, and git</p>
+                <li>Web Crawler</li>
+                <p>I learned some crawler knowledge in my space time last semester, and can use requests,
+                    multithreading, regular,and a litte MySQL adtabase command.</p>
+                <li>Programming language</li>
+                <p>C++, Python, Shell, HTML, CSS,JavaScript</p>
+            </ul>
         </div>
+        <div class="container-tool">
+
+
+            <div id="Isprime">
+                <h4>Is prime</h4>
+                <div class="Isprime-description">It determines if the number entered is prime</div>
+                <input type="text" placeholder="Write Something in Here" class="isprime-input">
+                <button class="isprime-button">click</button>
+
+                <pre class="isprime-output"></pre>
+            </div>
+
+            <div id="count-prime">
+                <h4>CountPrime</h4>
+                <div class="count-prime-description">It returns the number of prime between the two numbers || Please
+                    enter a number up to 10 million.It's too large for JavaScript to run</div>
+                <input type="text" style="width: 150px;" placeholder="Enter a smaller number" class="count-prime-low">
+                <input type="text" style="width: 150px;" placeholder="Enter a larger number" class="count-prime-high">
+                <button class="count-prime-button">click</button>
+                <pre class="count-prime-output"></pre>
+            </div>
+
+
+        </div>
+
+        <div id="contact">
+            <h4>Contact me</h4>
+            <p>If you want to contact me or have any questions, please send an email.</p>
+            <p>My email is: 2772337221@qq.com</p>
+        </div>
+
     </div>
-
-
-    <footer>&copy; 2023 YuuMoko</footer>
-
-
+    <footer class="footer">&copy; 2023 YuuMoko</footer>
     <script type="module">
         import { isprime } from "./static/js/isprime.js";
-
+        import { countprime } from "./static/js/countprime.js";
         isprime();
+        countprime();
     </script>
 </body>
 

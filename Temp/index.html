@@ -1,150 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>代办事项</title>
+    <title>个人网站</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        .nav {
-            width: 600px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .nav input {
-            width: 450px;
-            height: 50px;
-            font-size: 25px;
-            padding-left: 10px;
-        }
-
-        .nav button {
-            width: 150px;
-            height: 50px;
-            border: none;
-            color: white;
-            background-color: orange;
-            font-size: 18px;
-        }
-
-        .nav button:active {
-            background-color: grey;
-        }
-
-        .container {
-            width: 600px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            padding-top: 10px;
-        }
-
-        .container .left,
-        .container .right {
-            width: 50%;
-        }
-
-        .container .left h3,
-        .container .right h3 {
-            text-align: center;
-            height: 50px;
-            line-height: 50px;
-            background-color: black;
-            color: white;
-        }
-
-        .container .row {
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-        }
-
-        .container .row span {
-            width: 240px;
-        }
-
-        .container .row button {
-            width: 40px;
-            height: 30px;
-        }
-    </style>
-
-    <!-- 表示上方的 div，里面方输入框和按钮 -->
-    <div class="nav">
-        <input type="text">
-        <button>新建任务</button>
-    </div>
-    <!-- 下方的 div，里面分成左右两栏 -->
-    <div class="container">
-        <div class="left">
-            <h3>未完成</h3>
+    <header>
+        <h1>欢迎来到我的个人网站</h1>
+        <nav>
+            <ul>
+                <li>关于我</li>
+                <li>技能</li>
+                <li>作品集</li>
+                <li>联系我</li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>关于我</h2>
+        < img src="profile.jpg" alt="个人头像">
+            <p>大家好，我是XXX。我是一名UI设计师和前端开发者。我热爱创造美丽的用户界面，并喜欢将设计转化为代码。</p>
+    </section>
+    <section id="skills">
+        <h2>技能</h2>
+        <ul>
+            <li>UI设计</li>
+            <li>前端开发</li>
+            <li>响应式设计</li>
+            <li>JavaScript</li>
+            <li>HTML/CSS</li>
+        </ul>
+    </section>
+    <section id="portfolio">
+        <h2>作品集</h2>
+        <div class="project">
+            <h3>项目1</h3>
+            < img src="project1.jpg" alt="项目1截图">
+                <p>这是我最近完成的一个项目。</p>
         </div>
-        <div class="right">
-            <h3>已完成</h3>
+        <div class="project">
+            <h3>项目2</h3>
+            < img src="project2.jpg" alt="项目2截图">
+                <p>这是我之前做的一个项目。</p>
         </div>
-    </div>
-
-    <script>
-        let addTaskBtn = document.querySelector('.nav button');
-        addTaskBtn.onclick = function () {
-            // 1. 获取输入到的内容
-            let input = document.querySelector('.nav input');
-            let taskContent = input.value;
-            // 2. 创建一个 div.row, 里面设置上面需要的 复选框, 文本， 删除按钮
-            let row = document.createElement('div');
-            row.className = 'row';
-            let checkBox = document.createElement('input');
-            checkBox.type = 'checkbox';
-            let span = document.createElement('span');
-            span.innerHTML = taskContent;
-            let deleteBtn = document.createElement('button');
-            deleteBtn.innerHTML = '删除';
-            row.appendChild(checkBox);
-            row.appendChild(span);
-            row.appendChild(deleteBtn);
-            // 3. 把 div.row 添加到 .left 中
-            let left = document.querySelector('.left');
-            left.appendChild(row);
-
-
-            // 4. 给 checkBox 增加一个点击处理函数，点击之后就能直接移动任务
-            checkBox.onclick = function () {
-                // 当用户点击的时候，就获取到当前的这个row元素
-                // 把这 row 给添加到另外一侧
-                if (checkBox.checked) {
-                    // 已选中状态
-                    target = document.querySelector('.right');
-                } else {
-                    target = document.querySelector('.left');
-                }
-                target.appendChild(row);
-            }
-
-            // 5. 实现删除效果
-            deleteBtn.onclick = function () {
-                // 要想删除 row， 就需要知道 row 的父元素
-                let parent = row.parentNode;
-                parent.removeChild(row);
-            }
-
-            // 6. 删除输入框的内容
-            input.value = '';
-        }
-    </script>
+    </section>
+    <section id="contact">
+        <h2>联系我</h2>
+        <p>如果你想和我合作或有任何问题，请发送邮件至xxx@example.com。</p>
+    </section>
+    <footer>
+        <p>&copy; 2022 我的个人网站</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
