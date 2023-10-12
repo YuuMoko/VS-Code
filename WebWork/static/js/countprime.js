@@ -1,4 +1,3 @@
-
 function isInteger(s) {
     return s % 1 === 0;
 };
@@ -10,13 +9,13 @@ let output = document.querySelector(".count-prime-output");
 
 let button = document.querySelector(".count-prime-button");
 
-let a = new Array(10000010).fill('');
-let primes = new Array(10000010).fill('');
-let st = new Array(10000010).fill(false);
+let primes = new Array(100010).fill('');
+
 let cnt = 0;
 
 let get_primes = function (n) {
-
+    let st = new Array(n).fill(false);
+    st.fill(false);
     for (let i = 2; i <= n; i++) {
         if (!st[i]) primes[cnt++] = i;
         for (let j = 0; primes[j] <= n / i; j++) {
@@ -30,23 +29,27 @@ let check = function () {
     let l = low.value;
     let r = high.value;
 
-    a.fill('');
     primes.fill('');
-    st.fill(false);
+
     cnt = 0;
     if (isInteger(l) && isInteger(r)) {
         if (parseInt(l) >= parseInt(r)) {
             output.innerHTML = "Left should smaller than right";
         }
         else {
-            get_primes(r);
-            let idx;
-            for (let i = 0; i < cnt; i++)
-                if (parseInt(primes[i]) >= parseInt(l)) {
-                    idx = i;
-                    break;
-                }
-            output.innerHTML = `The number of primes between ${l} and ${r} is ${cnt - idx}`;
+            if (parseInt(r) > 1000000) {
+                output.innerHTML = "Pease do not enter an integer greater than one million";
+            }
+            else {
+                get_primes(r);
+                let idx;
+                for (let i = 0; i < cnt; i++)
+                    if (parseInt(primes[i]) >= parseInt(l)) {
+                        idx = i;
+                        break;
+                    }
+                output.innerHTML = `The number of primes between ${l} and ${r} is ${cnt - idx}`;
+            }
         }
     }
     else {
