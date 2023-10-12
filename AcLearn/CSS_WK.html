@@ -3,24 +3,36 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=state, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./static/css/flex.css">
 </head>
 
 <body>
-    输入:
-    <br>
-    <textarea name="" id="" cols="30" rows="10" class="input"></textarea>
-    <br>
-    <button>run</button>
-    <br>
-    <pre></pre>
 
-    <script type="module">
-        import { main } from "./static/js/index2.js";
+    <script>
+        // First Problem
+        let x = 10;
+        let y = 5;
+        let z = x + y;
+        console.log(z);
+        //Second Problem
+        let print = function () {
+            console.log(arr);
+        }
 
-        main();
+
+        let arr = ['Jazz', 'Blues'];
+        print();
+        arr.push('Rock-n-Roll');
+        print();
+        arr[1] = "Classics";
+        print();
+        arr.shift();
+        print();
+        arr.push("Rap", "Reggae");
+        print();
+
+        // Third Problem
 
     </script>
 </body>

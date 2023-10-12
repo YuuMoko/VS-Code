@@ -7,12 +7,25 @@
     padding: 0px;
 }
 
-.navbar-header div {
-    color: #9D9D9D;
-    font-family: SimSun;
+
+
+#title {
+    text-align: center;
+    top: 30px;
     font-size: 20px;
     line-height: 60px;
-    text-align: center;
+    -webkit-background-clip: text;
+    background-size: 800%;
+    background-image: linear-gradient(90deg, rgba(98, 201, 248, 0.6), rgba(243, 111, 255, 0.6), rgba(247, 129, 129, 0.6), rgba(241, 239, 104, 0.6), rgba(117, 226, 84, 0.6), rgba(98, 201, 248, 0.6));
+    animation: gradient 30s infinite linear;
+    color: transparent;
+    font-size: 100;
+}
+
+@keyframes gradient {
+    100% {
+        background-position: -800% 0%;
+    }
 }
 
 .navbar-header div:hover {
@@ -39,8 +52,8 @@ body {
 
 .panel-body {
     margin-top: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 19.1%;
+    margin-right: 19.1%;
     box-shadow: 0px 0px 5px black;
     border-radius: 10px;
     padding: 30px;
@@ -90,4 +103,18 @@ nav ul li a:hover {
 
 nav ul li h5 {
     display: inline-block;
+}
+
+.count-prime-button,
+.isprime-button {
+    border: 0;
+    background-color: #FFFFFF;
+    color: #61666D;
+    border: solid 1px;
+}
+
+.count-prime-button:hover,
+.isprime-button:hover {
+    color: #2FBDEF;
+    border-color: #00AEEC;
 }
