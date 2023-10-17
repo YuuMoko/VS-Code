@@ -1,43 +1,43 @@
 
-input = document.querySelector(".isprime-input");
-output = document.querySelector(".isprime-output");
-button = document.querySelector(".isprime-button")
+let input1 = document.querySelector(".isprime-input");
+let output1 = document.querySelector(".isprime-output");
+let button1 = document.querySelector(".isprime-button")
 
 
 function isInteger(s) {
     return s % 1 === 0;
 };
 
-check = function () {
-    num = input.value;
+let check1 = function () {
+    let num1 = input1.value;
 
-    console.log(num);
-    if (!isInteger(num)) {
-        output.innerHTML = "Please enter an integer";
+    console.log(num1);
+    if (!isInteger(num1)) {
+        output1.innerHTML = "Please enter an integer";
     }
     else {
         let flag = true;
-        num = parseInt(num);
-        if (num == 1) flag = false;
+        num1 = parseInt(num1);
+        if (num1 == 1) flag = false;
 
-        for (let i = 2; i <= num / i; i++)
-            if (num % i == 0) {
+        for (let i = 2; i <= num1 / i; i++)
+            if (num1 % i == 0) {
                 flag = false;
                 break;
             }
-        if (flag) output.innerHTML = "Yes";
-        else output.innerHTML = "No";
+        if (flag) output1.innerHTML = "Yes";
+        else output1.innerHTML = "No";
     }
 }
 
 function isprime() {
 
 
-    button.addEventListener("click", function () {
-        check();
+    button1.addEventListener("click", function () {
+        check1();
     });
-    input.addEventListener("keydown", function (event) {
-        if (event.code == "Enter") check();
+    input1.addEventListener("keydown", function (event) {
+        if (event.code == "Enter") check1();
     })
 };
 

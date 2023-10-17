@@ -1,6 +1,3 @@
-function isInteger(s) {
-    return s % 1 === 0;
-};
 
 let low = document.querySelector(".count-prime-low");
 let high = document.querySelector(".count-prime-high");
