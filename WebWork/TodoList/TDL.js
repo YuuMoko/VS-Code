@@ -56,6 +56,5 @@ let TDL = function () {
 }
 
 
-export {
-    TDL
-}
+
+TDL();
