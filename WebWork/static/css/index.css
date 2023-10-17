@@ -16,7 +16,7 @@
     line-height: 60px;
     -webkit-background-clip: text;
     background-size: 800%;
-    background-image: linear-gradient(90deg, rgba(98, 201, 248, 0.6), rgba(243, 111, 255, 0.6), rgba(247, 129, 129, 0.6), rgba(241, 239, 104, 0.6), rgba(117, 226, 84, 0.6), rgba(98, 201, 248, 0.6));
+    background-image: linear-gradient(90deg, rgba(213, 132, 113, 0.6), rgba(108, 218, 39, 0.6), rgba(152, 128, 237, 0.6), rgba(58, 220, 13, 0.6), rgba(44, 139, 16, 0.6), rgba(124, 200, 235, 0.6));
     animation: gradient 30s infinite linear;
     color: transparent;
     font-size: 100;

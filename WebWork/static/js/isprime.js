@@ -1,15 +1,15 @@
 
-let input = document.querySelector(".isprime-input");
-let output = document.querySelector(".isprime-output");
-let button = document.querySelector(".isprime-button")
+input = document.querySelector(".isprime-input");
+output = document.querySelector(".isprime-output");
+button = document.querySelector(".isprime-button")
 
 
 function isInteger(s) {
     return s % 1 === 0;
 };
 
-let check = function () {
-    let num = input.value;
+check = function () {
+    num = input.value;
 
     console.log(num);
     if (!isInteger(num)) {
@@ -41,6 +41,4 @@ function isprime() {
     })
 };
 
-export {
-    isprime
-};
+isprime();

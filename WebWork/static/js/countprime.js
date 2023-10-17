@@ -57,7 +57,7 @@ let check = function () {
     }
 }
 
-let countprime = function () {
+function countprime() {
     button.addEventListener("click", function () {
         check();
     });
@@ -68,6 +68,5 @@ let countprime = function () {
         if (event.code == "Enter") check();
     });
 }
-export {
-    countprime
-}
+
+countprime();
