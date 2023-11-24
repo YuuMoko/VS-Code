@@ -1,0 +1,22 @@
+.left>h3,
+.right>h3 {
+    margin: 0;
+}
+
+.left {
+    float: left;
+    width: 49%;
+}
+
+.right {
+    float: right;
+    width: 49%;
+}
+
+.box {
+    text-align: center;
+}
+
+.left {
+    border-right: 10px black;
+}

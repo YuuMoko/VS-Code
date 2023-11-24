@@ -1,0 +1,29 @@
+#TaskInput {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    max-width: 500px;
+    background-color: #181A1A;
+    transition: background-color 500ms ease-in-out;
+    width: 100%;
+    color: #F7E2DF;
+}
+
+#TaskInput:hover {
+    transition: background-color 500ms;
+    background-color: black;
+}
+
+.change {
+    border-radius: 5px;
+    border: none;
+    background-color: #181A1A;
+    color: #F7E2DF;
+    height: 100%;
+}
+
+.change:hover {
+    color: white;
+}

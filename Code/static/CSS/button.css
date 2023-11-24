@@ -1,0 +1,20 @@
+button {
+    color: #000000;
+    background-color: #FFDFDB;
+    border-radius: 10px;
+    border: 0;
+    transition: box-shadow 200ms ease 0s, background-color 200ms ease-in-out 0s;
+}
+
+button:hover {
+    background-color: #FFFFFF;
+    box-shadow: white 0 0 8px;
+}
+
+#create {
+    font-size: 17px;
+    border-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 9px;
+}

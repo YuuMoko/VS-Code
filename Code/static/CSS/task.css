@@ -1,0 +1,29 @@
+.task p {
+    margin: 0;
+    float: left;
+}
+
+.task {
+    width: 98%;
+    float: left;
+    text-align: right;
+    word-BREAK: break-word;
+    background-color: #181A1A;
+    color: white;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 7px;
+}
+
+.task :hover {
+    text-shadow: #E9FFFF 0 0 2px;
+}
+
+.task input {
+    float: right;
+    border-radius:
+}
+
+.task button {
+    float: right;
+}
