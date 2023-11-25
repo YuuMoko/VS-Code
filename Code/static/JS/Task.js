@@ -46,6 +46,10 @@ let NewTask = function () {
         let $change = $task.find('.change');
         $change.on('keydown', function (e) {
             if (e.code == 'Enter') {
+                if ($change.val() == "") {
+                    alert("You must write something!");
+                    return 0;
+                }
                 $p.text($change.val());
                 $change.remove();
             }

@@ -18,3 +18,9 @@ button:hover {
     border-bottom-right-radius: 15px;
     padding: 9px;
 }
+
+@media (max-width: 610px) {
+    #create {
+        border-radius: 15px;
+    }
+}
