@@ -6,6 +6,7 @@ button {
     transition: box-shadow 200ms ease 0s, background-color 200ms ease-in-out 0s;
 }
 
+/* When the mouse hovers over any button, change its color, add a shadow, and it will appear as if it has been lit up */
 button:hover {
     background-color: #FFFFFF;
     box-shadow: white 0 0 8px;
@@ -19,6 +20,7 @@ button:hover {
     padding: 9px;
 }
 
+/* Make the button on the mobile phone look better */
 @media (max-width: 610px) {
     #create {
         border-radius: 15px;
